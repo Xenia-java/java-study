@@ -23,6 +23,7 @@ public class HelloWorld {    //快捷输入
         for (int length = s.length(); length > 0; length--) {   //字符串名.length().forr => 倒着遍历
             // shift+F6 批量修改
         }
+        //ctrl+alt+V自动生成类型和变量
     }
     }
 
@@ -132,7 +133,7 @@ class huiwen{      //判断是否为回文数
 }
 
 class devide{      //给定被除数和除数，不用*/%计算出商和余数
-    static void main() {
+    public static void main(String[] args) {
         System.out.println("请输入被除数:");
         Scanner sc = new Scanner(System.in);
         int devidend = sc.nextInt();

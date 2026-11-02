@@ -338,6 +338,16 @@ class StringSub{       //根据身份证号码截取关键信息 + 替换
 
 class StringMore{
     public static void main(String[] args) {
+        StringBuilder intial = new StringBuilder();
+        System.out.println("初始容量为："+intial.capacity());
+        System.out.println("新空参长度为："+intial.length());
+        intial.append("abcdefghijklmnopqrstuvwxyz");
+        System.out.println("超出16后容量为："+intial.capacity());  //16*2+2=34
+        System.out.println("新长度为："+intial.length());
+        intial.append("0123456789");
+        System.out.println("超出34后容量为："+intial.capacity());  //34*2+2  JDK20更新
+        System.out.println("总长度为："+intial.length());
+
         Scanner s = new Scanner(System.in);
         System.out.println("请输入字符串：");
         String str = s.nextLine();
